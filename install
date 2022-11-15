@@ -11,8 +11,6 @@ echo >&2 " USER        $USER"
 echo >&2 " HOME        $HOME"
 echo >&2 "====================================================================="
 
-cd $HOME
-
 # Make passwordless sudo work
 export SUDO_ASKPASS=/bin/true
 
@@ -23,4 +21,5 @@ mv tmux.conf $HOME/.tmux.conf
 mv git_prompt.sh ~/.git_prompt.sh
 mv gitconfig $HOME/.gitconfig
 
-sudo apt-get install -y neovim
+sudo apt-get update -y
+sudo apt-get install -y neovim tmux
