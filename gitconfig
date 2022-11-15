@@ -1,0 +1,7 @@
+[user]
+	name = Christopher De Vries
+	email = devries@idolstarastronomer.com 
+[push]
+	default = nothing
+[init]
+	defaultBranch = main
