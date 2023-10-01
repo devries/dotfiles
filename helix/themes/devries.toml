@@ -1,0 +1,18 @@
+inherits = "solarized_light"
+
+# "ui.text" = { fg = "#111133"}
+
+"ui.virtual.ruler" = { bg = "base02" }
+
+[palette]
+base0 = '#333355'
+base1 = '#222244'
+base2 = '#111133'
+
+base00   = '#738486'
+base01   = '#839191'
+base015  = '#b5b8ad'
+base0175 = '#cdcbbc'
+
+green = '#758900'
+cyan = '#1a8888'

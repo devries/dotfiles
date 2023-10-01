@@ -1,0 +1,14 @@
+theme = "devries"
+
+[editor]
+true-color = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+
+[editor.soft-wrap]
+enable = true
+
+[keys.normal]
+X = "extend_line_above"

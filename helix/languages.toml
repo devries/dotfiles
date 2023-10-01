@@ -1,0 +1,20 @@
+[[language]]
+name = "python"
+rulers = [72, 99]
+auto-format = false
+
+[[language]]
+name = "go"
+indent = { tab-width = 2, unit = "\t" }
+
+[[language]]
+name = "markdown"
+rulers = [80]
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'“' = '”'
+'<' = '>'
