@@ -31,17 +31,17 @@ HELIXVERSION=23.10
 echo "Activating feature 'helix-editor'"
 echo "Installing version ${HELIXVERSION}"
 
-sudo apt-get -y update
-sudo apt-get -y upgrade --no-install-recommends
-DEBIAN_FRONTEND=noninteractive sudo apt-get -y install --no-install-recommends curl ca-certificates xz-utils
-sudo apt-get -y autoremove
-sudo apt-get -y clean
+apt-get -y update
+apt-get -y upgrade --no-install-recommends
+DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends curl ca-certificates xz-utils
+apt-get -y autoremove
+apt-get -y clean
 
 cd /tmp
 curl -fLO https://github.com/helix-editor/helix/releases/download/${HELIXVERSION}/helix-${HELIXVERSION}-x86_64-linux.tar.xz
 tar xJf helix-${HELIXVERSION}-x86_64-linux.tar.xz
 rm -f helix-${HELIXVERSION}-x86_64-linux.tar.xz
-sudo install -D helix-${HELIXVERSION}-x86_64-linux/hx /usr/local/bin/hx
+install -D helix-${HELIXVERSION}-x86_64-linux/hx /usr/local/bin/hx
 
 mv helix-${HELIXVERSION}-x86_64-linux/runtime $HOME/.config/helix
 rm -rf helix-${HELIXVERSION}-x86_64-linux
